@@ -1,0 +1,23 @@
+{
+  "name": "jsonschema-for-imimapping",
+  "version": "1.0.0",
+  "description": "json schema for IMI Mapping",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "frogcat",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "jsonschema": "^1.1.1",
+    "mocha": "^3.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frogcat/jsonschema-for-imimapping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frogcat/jsonschema-for-imimapping/issues"
+  },
+  "homepage": "https://github.com/frogcat/jsonschema-for-imimapping#readme"
+}

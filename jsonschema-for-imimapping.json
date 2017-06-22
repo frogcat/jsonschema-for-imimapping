@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@vocab": {
+      "type": "string"
+    },
+    "@prefix": {
+      "type": "object",
+      "patternProperties": {
+        "^[^:]*$": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "@dmd": {
+      "type": "string"
+    },
+    "@title": {
+      "type": "string"
+    },
+    "@description": {
+      "type": "string"
+    }
+  },
+  "patternProperties": {
+    "^@vnd\\..+": {
+      "oneOf": [{
+        "type": "array"
+      }, {
+        "type": "object"
+      }, {
+        "type": "string"
+      }, {
+        "type": "number"
+      }, {
+        "type": "boolean"
+      }]
+    },
+    "^[^@].*$": {
+      "oneOf": [{
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }, {
+        "type": "string"
+      }]
+    }
+  },
+  "additionalProperties": false,
+  "required": []
+}
